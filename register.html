@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | RV Fest </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h2 class="logo">RV Fest</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="register.html" class="active">Register</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="register">
+    <h1>Register for an Event</h1>
+    <form id="registerForm">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="text" id="college" placeholder="College Name" required>
+      <select id="event">
+        <option value="">Select Event</option>
+        <option value="Hackathon">Hackathon</option>
+        <option value="Battle of Bands">Battle of Bands</option>
+        <option value="Robo Race">Robo Race</option>
+        <option value="CodeQuest">CodeQuest</option>
+        <option value="Tech Expo">Tech Expo</option>
+        <option value="Gaming Arena">Gaming Arena</option>
+        <option value="Workshop Series">Workshop Series</option>
+      </select>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="tel" id="phone" placeholder="Phone Number" required>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="message"></p>
+  </section>
+
+  <footer>
+    <p>© RV University – All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
